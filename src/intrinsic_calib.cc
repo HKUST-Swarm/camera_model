@@ -26,6 +26,7 @@ main( int argc, char** argv )
 {
     cv_utils::fisheye::PreProcess* preprocess;
     cv::ocl::setUseOpenCL( false );
+    cv::setNumThreads(1);
     cv::Size boardSize;
     float squareSize;
     std::string inputDir;
